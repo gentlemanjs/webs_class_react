@@ -1,0 +1,20 @@
+.refer__cont {
+    min-height: 100vh;
+    margin-bottom: 20vw;
+}
+.refer__inner {
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    table {
+        border-top: 1px solid var(--dark_border);
+        border-bottom: 2px solid var(--dark_border);
+        td {
+            border-top: 1px solid var(--dark_border);
+            padding: 1.4rem 0;
+            font-family: var(--subKor_font);
+            font-weight: 300;
+        }
+    }
+}
