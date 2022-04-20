@@ -1,18 +1,26 @@
+body {
+    background: var(--black);
+}
 #loading.loading__active {
     opacity: 1;
-    transition: all 1.6s;
+    transition: all 1.6s;    
+}
+#loading.light {
+    background: var(--light_bg);
+    span {
+        color: var(--black);
+    }
 }
 #loading {
     position: fixed;
     opacity: 0;
     top: 0; left: 0;
     width: 100%;
+    background: var(--dark_bg);
     height: 100%;
-    background: var(--black);
     z-index: 99999;
     transition: all 1.6s;
 }
-
 .loading__text {
     position: absolute;
     top: 0;

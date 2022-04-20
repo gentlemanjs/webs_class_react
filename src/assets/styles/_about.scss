@@ -66,3 +66,12 @@
         }
     }
 }
+
+// 어바웃 애니메이션
+
+.about__cont1,
+.about__cont2,
+.about__cont3 {
+    opacity: 0;
+    transform: translateY(50px);
+}

@@ -1,4 +1,15 @@
 // container
+#root {
+    transition: all 0.3s;
+}
+#root.black {
+    background-color: var(--black);
+}
+#root.light {
+    background-color: var(--light);
+}
+
+
 
 .container {
     width: 98%;

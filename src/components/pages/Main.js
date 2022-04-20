@@ -58,10 +58,18 @@ class Main extends React.Component {
                 delay: 2.1})
         }, 100);
     }
-    componentDidMount(){
+    getPorts = () => {
         setTimeout(() => {
             this.setState({isLoading:false});
             this.getSite();
+        }, 1600);
+    }
+    
+    componentDidMount(){
+        setTimeout(() => {
+            document.querySelector("body").style.background ="#000"
+            document.getElementById("loading").classList.remove("loading__active");
+            this.getPorts();
         }, 3000);
     }
 

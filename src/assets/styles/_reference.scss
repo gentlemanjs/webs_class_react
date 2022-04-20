@@ -18,3 +18,10 @@
         }
     }
 }
+
+// 레퍼런스 애니메이션
+
+.refer__inner {
+    opacity: 0;
+    transform: translateY(50px);
+}
