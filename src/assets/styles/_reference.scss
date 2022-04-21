@@ -1,5 +1,24 @@
+// .refer__cont {
+//     min-height: 100vh;
+//     margin-bottom: 20vw;
+// }
+// .refer__inner {
+//     h2 {
+//         font-size: 2rem;
+//         margin-bottom: 1rem;
+//     }
+//     table {
+//         border-top: 1px solid var(--dark_border);
+//         border-bottom: 2px solid var(--dark_border);
+//         td {
+//             border-top: 1px solid var(--dark_border);
+//             padding: 1.4rem 0;
+//             font-family: var(--subKor_font);
+//             font-weight: 300;
+//         }
+//     }
+// }
 .refer__cont {
-    min-height: 100vh;
     margin-bottom: 20vw;
 }
 .refer__inner {
@@ -7,17 +26,60 @@
         font-size: 2rem;
         margin-bottom: 1rem;
     }
-    table {
-        border-top: 1px solid var(--dark_border);
-        border-bottom: 2px solid var(--dark_border);
-        td {
-            border-top: 1px solid var(--dark_border);
-            padding: 1.4rem 0;
-            font-family: var(--subKor_font);
-            font-weight: 300;
+}
+.refer__list {
+    border-top: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--black);
+        padding: 1.3rem 0;
+        transition: all 0.3s;
+        font-family: var(--subKor_font);
+
+        &:hover {
+            background: var(--black);
+            color: var(--white);
         }
     }
+    
+    span {
+        display: inline-block;
+    }
+    span:nth-child(1) {width: 6%; text-align: center;}
+    span:nth-child(2) {width: 20%;}
+    span:nth-child(3) {width: 64%;}
+    span:nth-child(4) {width: 10%; text-align: center;}
 }
+.refer__table {
+    margin-top: 200px;
+    font-family: var(--subKor_font);
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    p {
+        background-color: var(--dark_bg);
+        color: var(--white);
+        padding: 1.4rem;
+    }
+    .table {
+        color: var(--black);
+        font-family: var(--subKor_font);
+        border: 1px solid var(--black);
+        margin-top: 0.5em;
+    }
+    th, td {
+        font-weight: normal;
+        padding: 1em;
+        border-bottom: 1px solid var(--black);
+        border-left: 1px solid var(--black);
+    }
+}
+
 
 // 레퍼런스 애니메이션
 
