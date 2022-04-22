@@ -14,7 +14,7 @@ function App() {
       <Route path="/" exact component={Main} />
       <Route path="/about" exact component={About} />
       <Route path="/reference" exact component={Reference} />
-      <Route path="/refer-detail" exact component={ReferDetail} />
+      <Route path="/ReferDetail" exact component={ReferDetail} />
       <Route path="/script" exact component={Script} />
       <Route path="/youtube" exact component={Youtube} />
       <Route path="/contact" exact component={Contact} />

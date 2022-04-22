@@ -52,7 +52,7 @@ function ReferCont({id, title, desc, use, tag, view, version, element, Accessibi
     return (
         <li>
             <Link to={{
-                pathname: "refer-detail",
+                pathname: "ReferDetail",
                 state: {id, title, desc, use, tag, view, version, element, Accessibility, CrossBroswing, Definition, image, link, mdn, w3c}
             }}>
                 <span className="num">{id}</span>
