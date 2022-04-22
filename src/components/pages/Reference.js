@@ -136,7 +136,7 @@ class Reference extends React.Component {
                 opacity: 1,
                 y: 0,
                 ease: "back.out(2.2)",
-                delay: 0.8})
+                delay: 0.8}) 
         }, 10);
     }
     getRefers = async () => {
