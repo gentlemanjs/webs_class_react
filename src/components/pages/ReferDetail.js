@@ -163,12 +163,12 @@ class ReferDetail extends React.Component {
                                         <div className="refer__site">
                                             <h4>참고 사이트(Reference)</h4>
                                             <ul> 
-                                                <li>mdn : <Link to={location.state.mdn}>
+                                                <li>mdn : <a href={location.state.mdn} target="_blank">
                                                         {location.state.mdn}
-                                                    </Link></li>
-                                                <li>w3c : <Link to={location.state.w3c}>
-                                                        {location.state.mdn}
-                                                    </Link>
+                                                    </a></li>
+                                                <li>w3c : <a href={location.state.w3c} target="_blank">
+                                                        {location.state.w3c}
+                                                    </a>
                                                 
                                                 </li>
                                             </ul>
