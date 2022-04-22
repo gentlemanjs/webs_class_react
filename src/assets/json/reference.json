@@ -54,7 +54,7 @@
                     "<abbr> 태그는 시각적으로는 점선이 표시되지만 브라우저마다 표시가 다를 수 있습니다.",
                     "<abbr> 태그는 title 속성을 설정할 경우 마우스 오버시 툴팁 형식으로 약어가 표시됩니다."
                 ],
-                "Accessibility" : [],
+                "Accessibility" : "-",
                 "CrossBroswing" : [
                     "HTML4에서는 약어를 표현할 때 <acronym>를 사용하였지만, HTML5에서는 약어를 표현할 때 <abbr>를 사용합니다."
                 ],
@@ -77,7 +77,7 @@
                     "<acronym> 태그는 줄임말이나 머리글자를 표현하는데 사용합니다.",
                     "<acronym>는 HTML4 태그이고, HTML5에서 지원되지 않는 오래된 태그입니다. 일부 브라우저에서 작동 될 수 있지만 사용을 권장하지 않습니다."
                 ],
-                "Accessibility" : [],
+                "Accessibility" : "-",
                 "CrossBroswing" : [
                     "HTML4에서는 약어에 대해서는 <acronym>를 사용하고, HTML5에서는 약어를 <abbr>로 사용합니다."
                 ],
@@ -104,7 +104,7 @@
                     "<address> 태그는 연락처 정보 보다 더 광범위한 정보를 포함 할 수 없습니다.(시간을 나타내는 time 태그등)",
                     "<address> 태그는 일반적으로 <footer> 영역에서 많이 사용합니다."
                 ],
-                "Accessibility" : [],
+                "Accessibility" : "-",
                 "CrossBroswing" : [],
                 "mdn" : "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address",
                 "w3c" : "https://html.spec.whatwg.org/multipage/sections.html#the-address-element"
@@ -125,7 +125,7 @@
                     "<applet> 태그는 자바 애플랫 요소를 설정합니다.",
                     "<applet> 태그는 자바 애플랫 요소를 사용하기 위한 개발자 소스였으나, 현재는 사용하지 않으며, <object> 태그를 사용합니다."
                 ],
-                "Accessibility" : [],
+                "Accessibility" : "-",
                 "CrossBroswing" : [
                     "HTML5에서 지원하지 않습니다. 대신 <embed> 태그와 <object> 태그를 이용합니다."
                 ],
@@ -153,7 +153,7 @@
                     "이미지 위에 영역을 설정하고 링크를 설정하는 방법은 많이 사용하지 않습니다. 직접 링크를 걸고 사용하는 것을 추천합니다.",
                     "이미지 맵은 위치가 고정적이기 때문에 반응형 사이트에서 적용 할 수 없습니다."
                 ],
-                "Accessibility" : [],
+                "Accessibility" : "-",
                 "CrossBroswing" : [],
                 "mdn" : "https://developer.mozilla.org/ko/docs/Web/HTML/Element/area",
                 "w3c" : ""

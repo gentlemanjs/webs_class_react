@@ -87,3 +87,29 @@
     opacity: 0;
     transform: translateY(50px);
 }
+
+.refer__definition,
+.refer__Accessibility,
+.refer__site {
+    h4 {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        background: var(--black);
+        color: var(--white);
+        display: inline-block;
+        padding: 5px 10px;
+    }
+    ul {
+        padding: 5px 30px;
+        border: 2px solid var(--black);
+        li {
+            padding: 10px 0;
+            list-style: circle;
+        }
+    }
+
+    a {
+        background: var(--black);
+        color: var(--white);
+    }
+}

@@ -3,6 +3,7 @@ import Header from "../layout/Header";
 import Contents from "../layout/Contents";
 import Footer from "../layout/Footer";
 import { gsap } from "gsap";
+import {Link} from "react-router-dom"
 
 // function ReferDetail(props) {
 //     console.log(props)
@@ -54,6 +55,11 @@ import { gsap } from "gsap";
 //     }
 // }
 function Definition({text}){
+    return (
+        <li>{text}</li>
+    )
+}
+function Accessibility({text}){
     return (
         <li>{text}</li>
     )
@@ -132,13 +138,41 @@ class ReferDetail extends React.Component {
                                                 </tr>
                                             </tbody>
                                         </table>
-                                        <h4>정의</h4>
-                                        {location.state.Definition.map(data=>(
-                                            <Definition 
-                                                text={data}
-                                                key={data}
-                                            />
-                                        ))}
+                                        <div className="refer__definition">
+                                            <h4>정의(Definition)</h4>
+                                            <ul>
+                                                {location.state.Definition.map(data=>(
+                                                    <Definition 
+                                                        text={data}
+                                                        key={data}
+                                                    />
+                                                ))}
+                                            </ul>
+                                        </div>
+                                        <div className="refer__Accessibility">
+                                            <h4>접근성(Accessibility)</h4>
+                                            <ul>
+                                                {location.state.Accessibility.map(data=>(
+                                                    <Accessibility 
+                                                        text={data}
+                                                        key={data}
+                                                    />
+                                                ))}
+                                            </ul>
+                                        </div>
+                                        <div className="refer__site">
+                                            <h4>참고 사이트(Reference)</h4>
+                                            <ul> 
+                                                <li>mdn : <Link to={location.state.mdn}>
+                                                        {location.state.mdn}
+                                                    </Link></li>
+                                                <li>w3c : <Link to={location.state.w3c}>
+                                                        {location.state.mdn}
+                                                    </Link>
+                                                
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
