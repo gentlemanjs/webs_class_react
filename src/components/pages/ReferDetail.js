@@ -71,6 +71,7 @@ class ReferDetail extends React.Component {
             history.push("/reference");
         }
         document.querySelector("body").style.background ="#F0EEEB"
+        document.getElementById("root").scrollTo(0, 0);
         this.mainAnimation();
     }
 
@@ -93,7 +94,7 @@ class ReferDetail extends React.Component {
     }
     render(){
         const {location} = this.props;
-        console.log(location)
+        console.log(location.state.Accessibility)
         if(location.state === undefined){
             return <div>잘못된 페이지입니다.</div>
         } else{
@@ -163,16 +164,17 @@ class ReferDetail extends React.Component {
                                         <div className="refer__site">
                                             <h4>참고 사이트(Reference)</h4>
                                             <ul> 
-                                                <li>mdn : <a href={location.state.mdn} target="_blank">
+                                                <li>mdn : <a href={location.state.mdn} target="_blank" rel="noopener noreferrer">
                                                         {location.state.mdn}
                                                     </a></li>
-                                                <li>w3c : <a href={location.state.w3c} target="_blank">
+                                                <li>w3c : <a href={location.state.w3c} target="_blank" rel="noopener noreferrer">
                                                         {location.state.w3c}
                                                     </a>
                                                 
                                                 </li>
                                             </ul>
                                         </div>
+                                        <div className="refer__back"><Link to="/Reference">목록보기</Link></div>
                                     </div>
                                 </div>
                             </div>

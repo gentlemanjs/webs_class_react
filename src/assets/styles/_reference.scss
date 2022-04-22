@@ -113,3 +113,24 @@
         color: var(--white);
     }
 }
+
+.refer__back {
+    text-align: right;
+    margin-top: 10px;
+    
+    a {
+        display: inline-block;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background: var(--black);
+        color: var(--white);
+        transition: all 0.3s;
+        border: 1px solid var(--black);
+    }
+    a:hover {
+        color: black;
+        background: var(--white);
+    }
+
+    
+}

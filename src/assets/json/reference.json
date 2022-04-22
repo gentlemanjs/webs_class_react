@@ -54,7 +54,7 @@
                     "<abbr> 태그는 시각적으로는 점선이 표시되지만 브라우저마다 표시가 다를 수 있습니다.",
                     "<abbr> 태그는 title 속성을 설정할 경우 마우스 오버시 툴팁 형식으로 약어가 표시됩니다."
                 ],
-                "Accessibility" : ["-"],
+                "Accessibility" : [],
                 "CrossBroswing" : [
                     "HTML4에서는 약어를 표현할 때 <acronym>를 사용하였지만, HTML5에서는 약어를 표현할 때 <abbr>를 사용합니다."
                 ],
