@@ -62,13 +62,22 @@ function Definition({text}){
 function Accessibility({text}){
     return (
         <li>{text}</li>
-    )
+    )    
 }
 class ReferDetail extends React.Component {
     componentDidMount(){
         const {location, history} = this.props;
         if(location.state === undefined){
             history.push("/reference");
+        }
+        if(location.state.Accessibility.length == 0) {
+            document.querySelector(".refer__Accessibility").style.display = "none"
+        }
+        if(location.state.mdn.length == 0) {
+            document.querySelector(".mdn").style.display = "none"
+        }
+        if(location.state.w3c.length == 0) {
+            document.querySelector(".w3c").style.display = "none"
         }
         document.querySelector("body").style.background ="#F0EEEB"
         document.getElementById("root").scrollTo(0, 0);
@@ -164,10 +173,10 @@ class ReferDetail extends React.Component {
                                         <div className="refer__site">
                                             <h4>참고 사이트(Reference)</h4>
                                             <ul> 
-                                                <li>mdn : <a href={location.state.mdn} target="_blank" rel="noopener noreferrer">
+                                                <li className="mdn">mdn : <a href={location.state.mdn} target="_blank" rel="noopener noreferrer">
                                                         {location.state.mdn}
                                                     </a></li>
-                                                <li>w3c : <a href={location.state.w3c} target="_blank" rel="noopener noreferrer">
+                                                <li className="w3c">w3c : <a href={location.state.w3c} target="_blank" rel="noopener noreferrer">
                                                         {location.state.w3c}
                                                     </a>
                                                 
