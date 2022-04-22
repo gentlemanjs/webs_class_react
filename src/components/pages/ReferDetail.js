@@ -80,7 +80,7 @@ class ReferDetail extends React.Component {
             document.querySelector(".w3c").style.display = "none"
         }
         document.querySelector("body").style.background ="#F0EEEB"
-        document.getElementById("root").scrollTo(0, 0);
+        
         this.mainAnimation();
     }
 
@@ -183,7 +183,7 @@ class ReferDetail extends React.Component {
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div className="refer__back"><Link to="/Reference">목록보기</Link></div>
+                                        <div className="refer__back"><Link to="/reference">목록보기</Link></div>
                                     </div>
                                 </div>
                             </div>
