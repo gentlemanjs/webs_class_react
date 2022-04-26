@@ -70,13 +70,13 @@ class ReferDetail extends React.Component {
         if(location.state === undefined){
             history.push("/reference");
         }
-        if(location.state.Accessibility.length == 0) {
+        if(location.state.Accessibility.length === 0) {
             document.querySelector(".refer__Accessibility").style.display = "none"
         }
-        if(location.state.mdn.length == 0) {
+        if(location.state.mdn.length === 0) {
             document.querySelector(".mdn").style.display = "none"
         }
-        if(location.state.w3c.length == 0) {
+        if(location.state.w3c.length === 0) {
             document.querySelector(".w3c").style.display = "none"
         }
         document.querySelector("body").style.background ="#F0EEEB"
